@@ -1,6 +1,9 @@
 #include "Bomber.h"
 
- Bomber::Bomber() : Zombie(string n, int p, int atk){
-    cout<<"Celui la a l'air instable"<<endl;
-}
-//Bomber::Bomber() : Zombie(string n, int p, int atk)
+ Bomber::Bomber(string n,int p,int atk){
+        setNom(n);
+        setPv(p);
+        setAttack(atk);
+        cout<< getNom()<< " est un boomer!!! Il a l'air instable"<< endl;
+    }
+

@@ -14,6 +14,9 @@ class Bomber : public Zombie
         Bomber();
         Bomber(string n, int p, int atk);
 
+
+
+
 };
 
 #endif // BOMBER_H

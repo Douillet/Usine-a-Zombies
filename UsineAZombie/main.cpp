@@ -11,7 +11,9 @@ int main()
    Zombie proto75("Rene", 78, -3);
    Zombie protoCrashTest("Rater", 5, 1);
 
-   Bomber b;//("Boom", 60, 8);
+   Bomber b("Boom", 60, 8);
+
+   b.showInfos();
 
    cout<< protoCrashTest.getPv()<<endl;
    proto1.attaqueMaladroite(&protoCrashTest);
