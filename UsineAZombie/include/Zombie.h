@@ -36,6 +36,8 @@ class Zombie
 
         void showInfos();
 
+        void attaqueMaladroite(Zombie* cible);
+
 };
 
 #endif // ZOMBIE_H

@@ -35,7 +35,7 @@
 
     void Zombie::setPv(int p){
         if (100 < p or p < 0) {
-            cerr << getNom() << " a fondu car il ne pouvait supporter ses points de vie" << endl;
+            cerr << getNom() << " a fondu car il ne pouvait supporter ses points de vie" << endl << endl;
             pv = 0;
         }
         else {
@@ -46,7 +46,7 @@
 
     void Zombie::setAttack(int atk){
         if (atk < 0 or 10 < atk) {
-            cerr << getNom() << " a vu son crane exploser car son attaque l'a rendu instable" << endl;
+            cerr << getNom() << " a vu son crane exploser car son attaque l'a rendu instable" << endl << endl;
             attack = 0;
         }
         else{
@@ -56,7 +56,14 @@
 
     void Zombie::showInfos()
 {
+    cout << endl;
 	cout << "Nom de l'abomination: " << getNom() << endl;
 	cout << "Pv : " << getPv() << endl;
-	cout << "Attaque : " << getAttack() << endl;
+	cout << "Attaque : " << getAttack() << endl<< endl;
 }
+
+    void Zombie::attaqueMaladroite(Zombie* cible)
+    {
+        cible->setPv (cible->getPv() - getAttack());
+    }
+

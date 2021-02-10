@@ -14,7 +14,13 @@ int main()
    //cin >> proto69.getPv();
    cout<< proto69.getPv()<<endl;
    cout<< proto75.getAttack()<<endl;
-   cout<< proto1.showInfos()<<endl;
+   proto1.showInfos();
 
+   cout<< proto2.getPv()<<endl;
+   proto1.attaqueMaladroite(&proto2);
+   cout<< proto2.getPv()<<endl;
+
+
+   cout<<endl;
    return 0;
 }
