@@ -1,11 +1,18 @@
 # depslib dependency file v1.0
-1612951748 source:c:\users\render\documents\github\usine-a-zombies\usineazombie\main.cpp
+1612956234 source:c:\users\render\documents\github\usine-a-zombies\usineazombie\main.cpp
+	"Zombie.h"
+	"Bomber.h"
+
+1612955126 source:c:\users\render\documents\github\usine-a-zombies\usineazombie\src\zombie.cpp
 	"Zombie.h"
 
-1612952074 source:c:\users\render\documents\github\usine-a-zombies\usineazombie\src\zombie.cpp
-	"Zombie.h"
-
-1612952044 c:\users\render\documents\github\usine-a-zombies\usineazombie\include\zombie.h
+1612956312 c:\users\render\documents\github\usine-a-zombies\usineazombie\include\zombie.h
 	<string>
 	<iostream>
+
+1612955882 source:c:\users\render\documents\github\usine-a-zombies\usineazombie\src\bomber.cpp
+	"Bomber.h"
+
+1612956042 c:\users\render\documents\github\usine-a-zombies\usineazombie\include\bomber.h
+	<Zombie.h>
 

@@ -14,8 +14,10 @@
     }
 
     Zombie::~Zombie(){
-    cout<< getNom()<< " decede" <<endl;
-}
+
+    cout<< getNom()<< " est decede" <<endl <<endl;
+        }
+
 
     string Zombie::getNom(){
     return nom;
@@ -37,6 +39,7 @@
         if (100 < p or p < 0) {
             cerr << getNom() << " a fondu car il ne pouvait supporter ses points de vie" << endl << endl;
             pv = 0;
+            this->~Zombie();
         }
         else {
 		pv = p;
@@ -48,6 +51,7 @@
         if (atk < 0 or 10 < atk) {
             cerr << getNom() << " a vu son crane exploser car son attaque l'a rendu instable" << endl << endl;
             attack = 0;
+            this->~Zombie();
         }
         else{
             attack = atk;
@@ -65,5 +69,11 @@
     void Zombie::attaqueMaladroite(Zombie* cible)
     {
         cible->setPv (cible->getPv() - getAttack());
+
+        if(cible-> pv==0){
+            cible->~Zombie();
+       }
+
     }
+
 

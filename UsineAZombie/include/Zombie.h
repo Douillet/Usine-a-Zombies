@@ -34,6 +34,7 @@ class Zombie
         int getAttack();
         void setAttack(int);
 
+        //fonctions
         void showInfos();
 
         void attaqueMaladroite(Zombie* cible);
